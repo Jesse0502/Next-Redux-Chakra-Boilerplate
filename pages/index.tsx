@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { handleSetUserInfo } from "@/store/userSlice";
-import { Box, Container } from "@chakra-ui/react";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -21,9 +19,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container>
-        <Box>{JSON.stringify(userInfo)}</Box>
-      </Container>
+      <div className="flex bg-black text-white">
+        <p>{JSON.stringify(userInfo)}</p>
+      </div>
     </>
   );
 }
