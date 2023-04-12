@@ -19,8 +19,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex bg-black text-white">
-        <p>{JSON.stringify(userInfo)}</p>
+      <div className="w-full py-5 bg-purple-500">
+        <p className="font-bold text-purple-50 text-center text-4xl">HI</p>
       </div>
     </>
   );
